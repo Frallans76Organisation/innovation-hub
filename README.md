@@ -48,6 +48,25 @@ Innovation Hub är ett komplett system för användardriven innovation i offentl
 - **Top Matchade Tjänster** - Identifiera populära förbättringsområden
 - **AI Confidence Meter** - Visualisering av analysens tillförlitlighet
 
+### 🏛️ Projekthantering
+- **Projekt-CRUD** - Skapa, uppdatera och hantera utvecklingsprojekt
+- **Idékoppling** - Koppla idéer till projekt (implements, extends, inspires)
+- **Statushantering** - Föreslagen → Planering → Pågående → Avslutad
+- **Budgetspårning** - Estimerad budget och finansieringskälla
+
+### 📋 Strategidokument
+- **Stratsys-import** - Ladda strategimål från Excel/PDF
+- **Hierarkisk struktur** - Strategiska mål → Delmål → Aktiviteter
+- **Alignment-analys** - Automatisk matchning idé/projekt → strategimål
+- **Visualisering** - Trädvy för strategidokument
+
+### 💰 Finansieringsutlysningar
+- **Utlysningshantering** - Vinnova, EU Horizon, EU Digital, Regional
+- **Deadline-övervakning** - Kommande och öppna utlysningar
+- **Budget-information** - Total budget, min/max bidrag
+- **Matchning** - Koppla idéer/projekt till lämpliga utlysningar
+- **Betygsättning** - Användarbetyg på matchningar
+
 ### 📄 Dokumenthantering
 - **RAG Vector Database** - ChromaDB för semantisk sökning
 - **Upload Management** - Drag & drop för dokument
@@ -113,7 +132,11 @@ http://localhost:8000
 ### Backend
 ```
 FastAPI
-├── SQLite Database (idéer, användare, röster, kommentarer)
+├── SQLite Database
+│   ├── Ideas, Categories, Tags, Comments, Votes
+│   ├── Projects, ProjectIdeas
+│   ├── StrategyDocuments, StrategicAlignments
+│   └── FundingCalls, FundingMatches
 ├── ChromaDB Vector Store (202 tjänster, RAG-dokument)
 └── AI Services
     ├── OpenRouter (Qwen3 32B för analys)
@@ -126,6 +149,9 @@ Vanilla JavaScript + Modern CSS
 ├── Senaste Idéer (översikt)
 ├── Lämna Idé (formulär med AI-analys)
 ├── Bläddra Idéer (filtrering, sökning, redigering)
+├── Projekt (projekthantering, idékoppling)
+├── Strategi (strategidokument, alignment)
+├── Utlysningar (Vinnova/EU, matchning)
 ├── Analys (dashboard med visualiseringar)
 └── Dokument (RAG-hantering)
 ```
@@ -161,9 +187,15 @@ Docker + Kubernetes + OpenShift
 innovation-hub/
 ├── innovation_hub/              # Huvudapplikation
 │   ├── api/                     # FastAPI endpoints
-│   │   ├── main.py             # Idéer, röstning, kommentarer
+│   │   ├── main.py             # Huvudapp, idéer, röstning, kommentarer
 │   │   ├── documents.py        # RAG och dokumenthantering
-│   │   ├── crud.py             # CRUD operationer
+│   │   ├── projects.py         # Projekt-API
+│   │   ├── strategy.py         # Strategi-API
+│   │   ├── funding.py          # Utlysningar-API
+│   │   ├── crud.py             # Idé CRUD operationer
+│   │   ├── project_crud.py     # Projekt CRUD
+│   │   ├── strategy_crud.py    # Strategi CRUD
+│   │   ├── funding_crud.py     # Funding CRUD
 │   │   └── analysis_crud.py    # Analysstatistik
 │   ├── ai/                      # AI-tjänster
 │   │   ├── openrouter_client.py        # AI-analys
@@ -171,13 +203,16 @@ innovation-hub/
 │   │   ├── rag_service.py              # ChromaDB RAG
 │   │   ├── rag_service_mapper.py       # Semantisk matchning
 │   │   ├── service_catalog_loader.py   # Tjänstekatalog import
+│   │   ├── project_loader.py           # Projekt RAG-loader
+│   │   ├── stratsys_loader.py          # Stratsys import
+│   │   ├── strategic_alignment_service.py  # Alignment-analys
 │   │   ├── embeddings_client.py        # Vector embeddings
 │   │   └── document_processor.py       # Dokumentbehandling
 │   ├── database/                # Databasmodeller
-│   │   ├── models.py           # SQLAlchemy modeller
+│   │   ├── models.py           # SQLAlchemy modeller (alla entiteter)
 │   │   └── connection.py       # DB connection
 │   ├── models/                  # Pydantic schemas
-│   │   └── schemas.py          # API request/response
+│   │   └── schemas.py          # API request/response (alla)
 │   └── frontend/                # Web UI
 │       ├── index.html
 │       ├── css/main.css
@@ -185,10 +220,18 @@ innovation-hub/
 │           ├── main.js         # Huvudlogik
 │           ├── api.js          # API-klient
 │           ├── ui.js           # UI-komponenter
+│           ├── projects.js     # Projekthantering
+│           ├── strategy.js     # Strategihantering
+│           ├── funding.js      # Utlysningshantering
 │           ├── analysis.js     # Analysvisualisering
 │           ├── voting.js       # Röstning & kommentarer
 │           ├── edit.js         # Idéredigering
 │           └── documents.js    # RAG-hantering
+├── tests/                       # Testsvit
+│   ├── conftest.py             # Pytest fixtures
+│   ├── test_project_*.py       # Projekt-tester (25)
+│   ├── test_strategy_*.py      # Strategi-tester (37)
+│   └── test_funding_api.py     # Funding-tester (19)
 ├── k8s/                         # Kubernetes manifests
 ├── argocd/                      # ArgoCD GitOps
 ├── existingservicesandprojects/ # Tjänstekatalog (202 tjänster)
@@ -224,6 +267,40 @@ innovation-hub/
   - Top matchade tjänster
   - Gap-analys
   - AI confidence average
+
+### Projekt
+- `GET /api/projects` - Lista projekt (med filter)
+- `POST /api/projects` - Skapa projekt
+- `GET /api/projects/{id}` - Hämta projekt
+- `PUT /api/projects/{id}` - Uppdatera projekt
+- `DELETE /api/projects/{id}` - Ta bort projekt
+- `POST /api/projects/{id}/ideas/{idea_id}` - Koppla idé till projekt
+- `DELETE /api/projects/{id}/ideas/{idea_id}` - Ta bort koppling
+- `GET /api/projects/{id}/ideas` - Lista projektets idéer
+
+### Strategi
+- `GET /api/strategy/documents` - Lista strategidokument
+- `POST /api/strategy/documents` - Skapa dokument
+- `GET /api/strategy/documents/{id}` - Hämta dokument
+- `PUT /api/strategy/documents/{id}` - Uppdatera
+- `DELETE /api/strategy/documents/{id}` - Ta bort
+- `GET /api/strategy/alignments/entity/{type}/{id}` - Hämta alignments
+- `POST /api/strategy/alignments` - Skapa alignment
+- `GET /api/strategy/stats` - Strategistatistik
+
+### Utlysningar (Funding)
+- `GET /api/funding/` - Lista utlysningar (med filter: source, status)
+- `POST /api/funding/` - Skapa utlysning
+- `GET /api/funding/stats` - Statistik (öppna, kommande, budget)
+- `GET /api/funding/upcoming` - Kommande deadlines
+- `GET /api/funding/{call_id}` - Hämta utlysning med matchningar
+- `PUT /api/funding/{call_id}` - Uppdatera utlysning
+- `DELETE /api/funding/{call_id}` - Ta bort utlysning
+- `GET /api/funding/matches/entity/{type}/{id}` - Matchningar för idé/projekt
+- `GET /api/funding/{call_id}/matches` - Matchningar för utlysning
+- `POST /api/funding/matches/` - Skapa matchning
+- `PUT /api/funding/matches/{id}/rating` - Uppdatera betyg
+- `DELETE /api/funding/matches/{id}` - Ta bort matchning
 
 ### Dokument & RAG
 - `POST /api/documents/upload` - Ladda upp dokument (auto-detekterar tjänstekataloger)
@@ -427,7 +504,7 @@ för att möta liknande behov.
 
 ## 🎨 Frontend Features
 
-### 5 Huvudsektioner
+### 8 Huvudsektioner
 
 **1. 🕐 Senaste Idéer**
 - Visar de 20 senaste inlämnade idéerna
@@ -447,14 +524,34 @@ för att möta liknande behov.
 - Redigera idéer med omanalys-option
 - Rösta och kommentera direkt
 
-**4. 🧠 Analys**
+**4. 🏛️ Projekt**
+- Lista med utvecklingsprojekt (status, typ, budget)
+- Skapa/redigera projekt med alla detaljer
+- Koppla idéer till projekt
+- Filter på status och projekttyp
+
+**5. 📋 Strategi**
+- Hierarkisk trädvy av strategidokument
+- Import av Stratsys-mål från Excel
+- Alignment-kopplingar till idéer/projekt
+- Statistik över strategisk täckning
+
+**6. 💰 Utlysningar**
+- Lista med finansieringsutlysningar
+- Filter på källa (Vinnova, EU Horizon, etc.)
+- Filter på status (öppen, kommande, stängd)
+- Budget och deadline-information
+- Matchningar mot idéer och projekt
+- Skapa nya utlysningar
+
+**7. 🧠 Analys**
 - Service Mapping Overview (4 färgkodade kort)
 - Utvecklingsbehov Matrix (3×3 grid: prioritet × service-typ)
 - Top Matchade Tjänster (populära förbättringsområden)
 - Gap-analys (områden utan befintliga tjänster)
 - AI Confidence Meter (analysens tillförlitlighet)
 
-**5. 📄 Dokument**
+**8. 📄 Dokument**
 - RAG-databas hantering (se alla dokument)
 - Ta bort individuella filer
 - Rensa hela databasen (med bekräftelse)
@@ -592,6 +689,30 @@ lsof -ti:8000 | xargs kill
 
 ## 📋 Changelog
 
+### 2026-01-08
+- 💰 **Fas 3: Utlysningshantering** fullt implementerad
+  - FundingCall och FundingMatch datamodeller
+  - 13 nya API endpoints för utlysningar
+  - Frontend-flik för Vinnova/EU-utlysningar
+  - Matchning av idéer/projekt mot utlysningar
+  - 19 nya tester (totalt 81 tester passerar)
+- 🔧 Fixat Pydantic forward reference problem
+- 🔧 Fixat httpx/starlette kompatibilitet
+
+### 2025-12-XX
+- 📋 **Fas 2: Strategihantering** fullt implementerad
+  - StrategyDocument och StrategicAlignment modeller
+  - Stratsys-import (Excel/PDF)
+  - Alignment-analys mot strategimål
+  - 37 strategi-tester
+
+### 2025-11-XX
+- 🏛️ **Fas 1: Projekthantering** fullt implementerad
+  - Project och ProjectIdea modeller
+  - Projekt-CRUD med idékoppling
+  - Frontend projekt-flik
+  - 25 projekt-tester
+
 ### 2025-11-10
 - 🐳 Docker deployment fully working (8.27GB image)
 - 🔧 Fixed SQLAlchemy 2.0 compatibility
@@ -623,17 +744,27 @@ lsof -ti:8000 | xargs kill
 
 ## 🤝 Bidra
 
-Projektet är öppet för bidrag! Några områden som behöver utveckling:
+Projektet är öppet för bidrag!
 
+### Implementerat
+- [x] Projekthantering med idékoppling
+- [x] Strategidokument och alignment
+- [x] Utlysningshantering (Vinnova/EU)
+
+### Planerat (Fas 4)
+- [ ] Automatisk synkronisering med Vinnova/EU-portaler
+- [ ] Email-notifikationer vid deadline
+- [ ] Schemalagda matchningsjobb
+- [ ] Strategiskt dashboard med KPIer
+
+### Förslag till förbättringar
 - [ ] PostgreSQL support för produktion
 - [ ] Användarautentisering (SSO/SAML)
-- [ ] Email-notifikationer
 - [ ] Export till Excel/PDF
 - [ ] Tidsserieanalys av trender
 - [ ] Interaktiva grafer (Chart.js/D3.js)
-- [ ] Versionshistorik för idéer
-- [ ] Batch-analys av flera idéer
-- [ ] Hybrid RAG + keyword matching
+- [ ] AI-baserad utlysningsmatchning
+- [ ] PDF-import av utlysningsdokument
 
 ---
 
@@ -661,6 +792,6 @@ MIT License - fritt att använda och modifiera.
 
 ---
 
-*Senast uppdaterad: 2025-11-10*
-*Version: 1.0.0*
-*Status: ✅ Production Ready*
+*Senast uppdaterad: 2026-01-08*
+*Version: 2.0.0*
+*Status: ✅ Production Ready (Fas 1-3 Komplett)*

@@ -6,6 +6,7 @@ Run with: python start_new.py
 
 import uvicorn
 import sys
+import argparse
 from pathlib import Path
 
 # Add project root to path
@@ -40,6 +41,11 @@ def setup_database():
     return True
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Innovation Hub API Server")
+    parser.add_argument("--port", type=int, default=8000, help="Port to run the server on")
+    parser.add_argument("--host", type=str, default="0.0.0.0", help="Host to bind to")
+    args = parser.parse_args()
+
     print("🏗️ Innovation Hub - Module 1: Core Data Foundation")
     print("=" * 50)
 
@@ -48,10 +54,10 @@ if __name__ == "__main__":
         exit(1)
 
     print("\n🚀 Starting Innovation Hub API...")
-    print("📊 API: http://localhost:8000")
-    print("🔧 API Docs: http://localhost:8000/docs")
-    print("💡 Health Check: http://localhost:8000/api/health")
-    print("📈 Statistics: http://localhost:8000/api/ideas/stats")
+    print(f"📊 API: http://localhost:{args.port}")
+    print(f"🔧 API Docs: http://localhost:{args.port}/docs")
+    print(f"💡 Health Check: http://localhost:{args.port}/api/health")
+    print(f"📈 Statistics: http://localhost:{args.port}/api/ideas/stats")
     print("\n" + "=" * 50)
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host=args.host, port=args.port)

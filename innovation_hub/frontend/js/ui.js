@@ -334,9 +334,24 @@ window.UI = {
                     await loadAnalysisData();
                 }
                 break;
+            case 'projects':
+                if (typeof loadProjectsTab === 'function') {
+                    await loadProjectsTab();
+                }
+                break;
             case 'documents':
                 if (typeof loadDocumentsData === 'function') {
                     await loadDocumentsData();
+                }
+                break;
+            case 'strategy':
+                if (typeof loadStrategyTab === 'function') {
+                    await loadStrategyTab();
+                }
+                break;
+            case 'funding':
+                if (typeof loadFundingTab === 'function') {
+                    await loadFundingTab();
                 }
                 break;
         }

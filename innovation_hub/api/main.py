@@ -40,6 +40,18 @@ app.add_middleware(
 # Include document management router
 app.include_router(documents_router)
 
+# Include project management router
+from .projects import router as projects_router
+app.include_router(projects_router)
+
+# Include strategy management router
+from .strategy import router as strategy_router
+app.include_router(strategy_router)
+
+# Include funding management router
+from .funding import router as funding_router
+app.include_router(funding_router)
+
 # Ideas endpoints
 @app.get("/api/ideas", response_model=List[IdeaResponse])
 def get_ideas(
