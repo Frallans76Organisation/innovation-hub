@@ -1,0 +1,36 @@
+
+Innovation Hub has been deployed!
+
+{{- if .Values.route.enabled }}
+
+Access the application:
+{{- if .Values.route.host }}
+  URL: https://{{ .Values.route.host }}
+{{- else }}
+  Run: oc get route {{ include "innovation-hub.fullname" . }} -o jsonpath='{.spec.host}'
+{{- end }}
+{{- else }}
+
+To access the application, run:
+  kubectl port-forward svc/{{ include "innovation-hub.fullname" . }} 8000:{{ .Values.service.port }}
+  Then open: http://localhost:8000
+{{- end }}
+
+API Documentation: <URL>/docs
+
+Health Check: <URL>/api/health
+
+Useful commands:
+  # View logs
+  oc logs -f deployment/{{ include "innovation-hub.fullname" . }}
+
+  # Check pod status
+  oc get pods -l app.kubernetes.io/name={{ include "innovation-hub.name" . }}
+
+  # Scale deployment
+  oc scale deployment/{{ include "innovation-hub.fullname" . }} --replicas=2
+
+NOTE: Make sure you have set the API keys:
+  helm upgrade {{ .Release.Name }} ./helm \
+    --set secrets.openrouterApiKey=YOUR_KEY \
+    --set secrets.openaiApiKey=YOUR_KEY
