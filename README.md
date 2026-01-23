@@ -387,31 +387,35 @@ docker push your-registry.com/innovation-hub:latest
 
 ## ☸️ OpenShift/Kubernetes Deployment
 
-Komplett deployment-paket finns redo:
+**Container Image:** `ghcr.io/frallan76/innovation-hub:1.0.0`
+
+### Med Helm Chart (Rekommenderat)
 
 ```bash
-# Deploy till OpenShift
-oc apply -k k8s/
+# 1. Logga in på OpenShift
+oc login https://api.your-cluster.com --token=xxx
 
-# Följ deployment
-oc get pods -n innovation-hub -w
+# 2. Skapa projekt
+oc new-project innovation-hub
 
-# Se logs
-oc logs -f deployment/innovation-hub -n innovation-hub
+# 3. Installera med Helm
+helm install innovation-hub ./helm \
+  --set secrets.openrouterApiKey=<KEY> \
+  --set secrets.openaiApiKey=<KEY>
 
-# Hämta route URL
-oc get route innovation-hub -n innovation-hub
+# 4. Hämta URL
+oc get route innovation-hub
 ```
 
 **Features:**
 - ✅ Persistent volumes för databas och RAG
 - ✅ Health checks (liveness, readiness, startup)
 - ✅ Resource limits och requests
-- ✅ Security contexts (non-root, no privilege escalation)
+- ✅ Security contexts (non-root, random UID support)
 - ✅ TLS/HTTPS med automatisk redirect
-- ✅ GitLab CI/CD pipeline + ArgoCD GitOps
+- ✅ Konfigurerbar via values.yaml
 
-**Se:** `DEPLOYMENT.md` för detaljerad guide.
+**Se:** `OPENSHIFT_DEPLOY.md` för detaljerad guide.
 
 ---
 
@@ -639,13 +643,8 @@ curl http://localhost:8000/api/analysis/stats | jq
 ## 📚 Dokumentation
 
 - **README.md** (denna fil) - Översikt och kom-igång-guide
-- **QUICKSTART.md** - 5-minuters snabbstart
-- **DEPLOYMENT.md** - Detaljerad deployment-guide (OpenShift)
-- **LOCAL_TESTING.md** - Docker testning lokalt
-- **DOCKER_QUICK_REFERENCE.md** - Docker kommandoreferen
-- **DEPLOYMENT_INDEX.md** - Navigation hub för alla guider
-- **SESSION_SUMMARY_2025-11-10.md** - Senaste utvecklingssession
-- **IMPLEMENTATION_SUMMARY.md** - Teknisk implementation
+- **OPENSHIFT_DEPLOY.md** - OpenShift deployment-guide för ops-team
+- **helm/** - Helm Chart för Kubernetes/OpenShift deployment
 
 ---
 
