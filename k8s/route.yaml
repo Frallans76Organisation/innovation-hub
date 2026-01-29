@@ -1,0 +1,24 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: innovation-hub
+  namespace: innovation-hub
+  labels:
+    app: innovation-hub
+  annotations:
+    # Enable HTTP/2
+    haproxy.router.openshift.io/h2upgrade-policy: "true"
+spec:
+  # Set your domain here
+  host: innovation-hub.apps.your-cluster.example.com
+  to:
+    kind: Service
+    name: innovation-hub
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    # Enable TLS
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None

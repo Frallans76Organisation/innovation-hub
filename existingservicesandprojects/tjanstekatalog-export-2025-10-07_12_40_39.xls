@@ -1,0 +1,629 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head >
+  <body>
+    
+    <table>
+      <thead>
+        <tr><th><b>Tjänsteerbjudandets namn</b></th><th><b>Ingress</b></th><th><b>Startdatum</b></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>APN (mobil uppkoppling)</td><td>APN (mobil uppkoppling) passar bäst för utrustning kom kommunicerar med annan
+utrustning, exempelvis en sensor som räknar besökare, en kamera som övervakar en
+byggnad eller en laddstolpe som aktiveras med en app.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslagstavla</td><td>Anslagstavlan används för att tidsstyrt kunna publicera och avpublicera digital
+information samt enklare anmälningar i HCL Notes eller på webben.
+Tjänsteerbjudandet är under avveckling
+</td><td>2022-11-24T07:24:24.905Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s -bas</td><td>Anslutning 10Gbit/s -bas passar bäst för verksamheter som behöver
+speciallösningar för sin anslutning till stadsnät – WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s -kritisk</td><td>Anslutning 10Gbit/s -kritisk passar bäst för verksamheter som behöver
+speciallösningar för sin anslutning till stadsnät – WAN, och behöver snabb
+support dygnet runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s -utökad</td><td>Anslutning 10Gbit/s -utökad passar bäst för verksamheter som behöver
+speciallösningar för sin anslutning till stadsnät – WAN, och behöver support
+dygnet runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s redundant -bas</td><td>Anslutning 10Gbit/s redundant -bas passar bäst för verksamheter som behöver
+speciallösningar, och måste ha tillgång till stadsnät – WAN för att fungera.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s redundant -kritisk</td><td>Anslutning 10GBit/s redundant -kritisk passar bäst för verksamheter som behöver
+speciallösningar, måste ha tillgång till stadsnät – WAN för att fungera och
+behöver snabb support dygnet runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 10Gbit/s redundant -utökad</td><td>Anslutning 10Gbit/s redundant -utökad passar bäst för verksamheter som behöver
+speciallösningar, måste ha tillgång till stadsnät – WAN för att fungera och
+behöver support dygnet runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s -bas</td><td>Anslutning 1Gbit/s -bas passar de flesta verksamheter. 9 av 10 väljer denna typ
+av anslutning till stadsnät – WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s -kritisk</td><td>Anslutning 1Gbit/s -kritisk passar bäst för verksamheter som behöver snabb
+support dygnet runt för sin anslutning till stadsnät – WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s -utökad</td><td>Anslutning 1Gbit/s -utökad passar bäst för verksamheter som behöver support
+dygnet runt för sin anslutning till stadsnät – WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s redundant -bas</td><td>Anslutning 1Gbit/s redundant -bas passar bäst för verksamheter som måste ha
+tillgång till stadsnät – WAN för att fungera.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s redundant -kritisk</td><td>Anslutning 1GBit/s redundant -kritisk passar bäst för verksamheter som måste ha
+tillgång till stadsnät – WAN för att fungera, och behöver snabb support dygnet
+runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Anslutning 1Gbit/s redundant -utökad</td><td>Anslutning 1Gbit/s redundant -utökad passar bäst för verksamheter som måste ha
+tillgång till stadsnät – WAN för att fungera, och behöver support dygnet runt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Applikationsplattform standard</td><td>Du kan välja mellan Windows, Linux och Container, men också mellan standard och
+utökad. Standard är den vanligaste varianten och den passar för de allra flesta,
+men om du har högre krav på att teknikerna på Intraservice ska kunna hjälpa till
+med felsökning och support, då ska du välja utökad.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Applikationsplattform utökad</td><td>Du kan välja mellan Windows, Linux och Container, men också mellan standard och
+utökad. Standard är den vanligaste varianten och den passar för de allra flesta,
+men om du har högre krav på att teknikerna på Intraservice ska kunna hjälpa till
+med felsökning och support, då ska du välja utökad.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Arbetsgrupp</td><td>Arbetsgruppen ger myndighetens handläggare möjlighet att enkelt och strukturerat
+hantera handlingar och ta fram underlag till ärenden som är diarieförda i
+LIS-diariet.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Arbetspsykologiska test för rekrytering</td><td>Som arbetsgivare i Göteborgs Stad kan du beställa utbildning, certifiering samt
+licens för stadens upphandlade arbetspsykologiska personlighetstest för
+rekrytering.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Arkitekturstöd</td><td>IT-arkitekterna hjälper dig från behov till färdig IT-lösning, antingen genom
+att ge råd vid upphandling eller genom att visa på redan befintliga lösningar.
+Med arkitekternas stöd vinner du tid och får ett bättre slutresultat.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Assessment Center - chefsutveckling</td><td>Metoden Assessment Center kan användas som en utvecklingsinsats av befintliga
+chefer. Det är en vetenskapligt beprövad metod och är ett mycket bra verktyg för
+att bedöma en persons styrkor, kompetens- och utvecklingsområden.</td><td>2022-12-14T00:00:00.000Z</td></tr>
+        <tr><td>Assessment Center - rekrytering exekutiva chefer</td><td>För ökad träffsäkerhet i chefsrekryteringar kan du som arbetsgivare i Göteborgs
+Stad beställa Assessment Center för bedömning av det personliga ledarskapet.
+
+
+</td><td>2022-12-14T00:00:00.000Z</td></tr>
+        <tr><td>Assessment Center - rekrytering operativa eller strategiska chefer</td><td>Som arbetsgivare i Göteborgs Stad kan du beställa Assessment Center vid
+rekrytering av operativa och strategiska chefer för bedömning av det personliga
+ledarskapet.</td><td>2022-12-15T00:00:00.000Z</td></tr>
+        <tr><td>Avancerat webbenkätverktyg</td><td>IT-stödet InSurvey är ett avancerat webbverktyg för enkäter.</td><td>2022-11-23T00:00:00.000Z</td></tr>
+        <tr><td>Avtalsmodul och arkiv</td><td>Avtalsmodulen inklusive avtalsarkivet underlättar din administration av avtal.
+Tjänsteerbjudandet kan kopplas till diarium och e-arkiv.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Azure online applikation</td><td>Azure online applikation är en landningsyta i Azure för kundens applikationer
+där ni kan skapa de resurser ditt projekt behöver.</td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Citrixleverans utökad</td><td>Citrixleverans utökad har alla fördelarna från Mina program (Citrix), men är för
+dig som har behov av en kundanpassad lösning med ännu högre krav på säkerhet och
+tillgänglighet. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Coaching för anställda</td><td>Som medarbetare i Göteborgs Stad har du förmånen att bli coachad. Du har upp
+till tre fria samtal utan kostnad.</td><td>2022-12-07T00:00:00.000Z</td></tr>
+        <tr><td>Coaching för chefer</td><td>Som arbetsgivare i Göteborgs Stad kan du beställa coaching för chefer med en
+oberoende intern coach.</td><td>2022-12-13T00:00:00.000Z</td></tr>
+        <tr><td>Coaching för nya chefer</td><td>Som ett led i stadens introduktionsutbildning för nya chefer erbjuder vi
+individuell chefscoaching på Karriärcenter. Som arbetsgivare i Göteborgs Stad
+kan du beställa coaching för nya chefer med en oberoende coach.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Container</td><td>Du kan välja mellan Windows, Linux och Container, men också mellan standard och
+utökad. Standard är den vanligaste varianten och den passar för de allra flesta,
+men om du har högre krav på att teknikerna på Intraservice ska kunna hjälpa till
+med felsökning och support, då ska du välja utökad.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Containerplattform</td><td>Intraservice kubernetes plattform.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Databas</td><td>Databas (SQL) är en mycket vanlig komponent i IT-system.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Databasinstans Oracle</td><td>Databas är en mycket vanlig komponent i IT-system. Databasinstans Oracle är för
+system som kräver egen instans.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Databasinstans SQL</td><td>Databas är en mycket vanlig komponent i IT-system. Databasinstans SQL är för
+system som kräver egen instans.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Databasserver</td><td>Databasserver (SQL) är för system som kräver egen server.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Dataskyddsombud</td><td>Tjänsten dataskyddsombud gäller för alla förvaltningar och bolag i Göteborgs
+Stad.</td><td>2022-11-29T07:41:31.193Z</td></tr>
+        <tr><td>Datorhjälpen</td><td>Datorhjälpen är ett verktyg för att skapa och publicera digitalt innehåll. Du
+kan kombinera film, ljud, text och bild. Tjänsten vänder sig dig som vill
+publicera manualer, dokumentation, utbildningar och guider.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Demokratistärkande metoder och verktyg</td><td>Tjänsten demokratistärkande metoder och verktyg erbjuder den digitala
+plattformen för medborgarinflytande. Här involverar ni göteborgarna digitalt i
+era delaktighetsinitiativ med syftet att transparent stärka dialog, öka
+delaktighet och inflytande för medborgare i Göteborg Stad.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Diarium och elektroniskt arkiv</td><td>Diarium är tillsammans med elektroniskt arkiv och diarielogg ett
+tjänsteerbjudande som gör det enkelt att uppfylla lagkraven på hur allmänna
+handlingar ska hanteras på en myndighet.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Diarium på Internet</td><td>Diariet på Internet ger dig möjlighet att publicera allmänna handlingar och
+postlistor på webben. De handlingar som godkänts för publicering hämtas direkt
+från myndighetens diarium.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Digital signering</td><td>Digital signering är en säker och effektiv tjänst som möjliggör Digital
+signering av dokument för medarbetare och medborgare i Göteborgs Stad.
+
+Tjänsten hanterar avancerade digitala underskrifter med filformatet PDF/A.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Domino</td><td>Domino är en serverplattform för Notes och dess tillämpningar. Både Domino och
+Notes är i slutet av sina livscykler och kommer att avvecklas. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Domänhantering</td><td>Domänhantering är en viktig process som krävs för att säkerställa en effektiv
+och pålitlig funktionalitet på internet. Skydda och bevaka allt som rör ett
+varumärke.</td><td></td></tr>
+        <tr><td>E-post från system</td><td>E-post från system gör det möjligt att skicka e-post med eller utan bilagor till
+medarbetare och medborgare från system på ett säkert och hanterat sätt.
+Systemägaren har dialog med eller beställer inställningar för utskicken från
+teknisk e-post.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>E-tjänstekort</td><td>E-tjänstekort är för dig som hanterar känsliga personuppgifter i systemen Plugo,
+Treserva och PMO. Alla får ett kort och du som behöver kan komplettera med
+mobilt certifikat.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>E-tjänsteplattform</td><td>E-tjänstplattform gör det möjligt för din verksamhet att nå ut med e-tjänster
+till stadens medborgare på goteborg.se. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>EA-Arkitektur & Processer</td><td>EA-Arkitektur & Processer ger både stadsövergripande och förvaltningsunikt
+arkitektstöd kopplat till IT-lösningar, och ser till att Intraservice digitala
+tjänster uppdateras kontrollerat. EA-Arkitektur & Processer är obligatoriskt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>LIS Elektroniska underskrifter</td><td>Tjänsteerbjudandet erbjuder möjlighet till elektronisk underskrift av dokument.
+Handlingarna blir juridiskt bindande i ett format som är godkänt för
+långtidsbevarande av Regionarkivet. Systemet heter Netpublicator Sign.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Extern service och kommunikation</td><td>Extern service och kommunikation innefattar samordning av goteborg.se och
+kalendarium.goteborg.se samt hantering av stadens officiella konton på facebook,
+instragram och youtube. Tjänsten innefattar även stöd i digital
+serviceutveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Fillagring</td><td>Stöd för SMB, NFS och S3.
+
+ </td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Fysisk plats för egen hårdvara 3 kW</td><td>Ett erbjudande till förvaltningar, bolag eller kommunalförbund inom Göteborgs
+Stad som behöver en robust plats för sin IT-miljö. Intraservice kan erbjuda
+detta genom tjänsten plats i datarack.
+</td><td>2024-01-15T00:00:00.000Z</td></tr>
+        <tr><td>Fysisk plats för egen hårdvara 5 KW</td><td>Ett erbjudande till förvaltningar, bolag eller kommunalförbund inom Göteborgs
+Stad som behöver en robust plats för sin IT-miljö. Intraservice kan erbjuda
+detta genom tjänsten plats i datarack.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Förvaltning av kundunik utveckling ServiceNow</td><td>Förvaltning av kundunik utveckling ServiceNow är för dig som tidigare har
+beställt Kundunik utveckling ServiceNow.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Förvaltning av processkartor</td><td>Tjänsteerbjudandet innebär att Intraservice förvaltar Göteborg Stads
+förvaltningars och bolags processkartor som är fastställda och modellerade i
+verktyget 2c8.
+</td><td>2022-11-21T08:59:17.405Z</td></tr>
+        <tr><td>Grafisk manual</td><td>I den grafiska manualen finns instruktioner för hur Göteborgs Stads grafiska
+profil ska användas. Den grafiska manualen riktar sig till de som arbetar med
+att ta fram information och kommunikation i Göteborgs Stad.</td><td>2023-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Grundtelefoni</td><td>Grundtelefoni finns i tre varianter: mobil, för dig med stadens mobilabonnemang,
+fast anknytning (IP), för dig som vill ha en bordstelefon, Virtuell, för
+funktioner som behöver röstbrevlåda eller hänvisningar. Under utveckling –
+softphone. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Göteborgs Stads kontaktcenter</td><td>Göteborgs Stads kontaktcenter erbjuder boende, besökare och näringsliv personlig
+vägledning och information om stadens verksamhet och tjänster via flera olika
+kanaler. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Handlingar på webben</td><td>Handlingar på webben erbjuder nämnd- och styrelsesekreterare möjligheten att
+publicera kallelser, föredragningslistor, handlingar och protokoll på Göteborgs
+Stads webbplats goteborg.se.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Hantering av moms, arbetsgivaravgifter med mera</td><td>Tjänsten är obligatoriskt för alla förvaltningar och hanterar förvaltningarnas
+samlade redovisning av arbetsgivaravgifter, moms och andra skatter. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>IT-Arbetsplats lagring</td><td>IT-Arbetsplats lagring hanterar den lagring som du gör inom IT-Arbetsplats (H:
+och I:). </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>IT-Säkerhet</td><td>IT-säkerhet är en grundläggande förmåga som tillgodoser stadens behov av
+informations- och IT-säkerhet.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för hybridmötesutrustning Bolag</td><td>IT-stöd för hybridmötesutrustning Bolag underlättar och förbättrar dina möten
+för dig som arbetar i något av stadens bolag. </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för hybridmötesutrustning Förvaltning</td><td>IT-stöd för hybridmötesutrustning Förvaltning underlättar och förbättrar dina
+möten för dig som arbetar i någon av stadens förvaltningar (ej skola). </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för hybridmötesutrustning Skola</td><td>IT-stöd för hybridmötesutrustning Skola underlättar och förbättrar dina möten
+för dig som arbetar inom skolförvaltningarna. </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för rumsdisplay Bolag</td><td>IT-stöd för rumsdisplay Bolag gör det enklare att hitta och boka konferensrum
+för dig som arbetar i något av stadens bolag. </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för rumsdisplay Förvaltning</td><td>IT-stöd för rumsdisplay Förvaltning gör det enklare att hitta och boka
+konferensrum för dig som arbetar i någon av stadens förvaltningar. </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>IT-stöd för rumsdisplay Skola</td><td>IT-stöd för rumsdisplay Skola gör det enklare att hitta och boka konferensrum
+för dig som arbetar inom skolförvaltningarna. </td><td>2024-11-12T00:00:00.000Z</td></tr>
+        <tr><td>Interna digitala navet</td><td>Digitala navet är Göteborgs Stads primära kanal för intern kommunikation och ger
+medarbetare och chefer tillgång till målgruppsanpassad information, verktyg och
+tjänster som de behöver i sitt arbete. </td><td>2023-09-01T00:00:00.000Z</td></tr>
+        <tr><td>Karriärcoaching</td><td>Du som chef kan beställa karriärcoaching till din medarbetare.
+Tjänsteerbjudandet ger medarbetaren möjligheten att ta ansvar för sin utveckling
+genom coaching där medarbetaren får möjlighet att reflektera över frågor som rör
+utveckling och karriär.</td><td>2022-12-15T00:00:00.000Z</td></tr>
+        <tr><td>Karriärplanering</td><td>Karriärplanering är en strukturerad metod som ger medarbetaren möjlighet att bli
+mer klar över sin karriär. Du som arbetsgivare kan beställa karriärplanering för
+din medarbetare.
+
+
+</td><td>2022-12-13T00:00:00.000Z</td></tr>
+        <tr><td>Karriärprofil</td><td>Du som chef kan beställa karriärprofil för din medarbetare. Du som söker till
+Morgondagens chef och går vidare i processen men inte kommer med i programmet,
+kommer att få ett erbjudande om karriärprofil.</td><td>2022-12-13T00:00:00.000Z</td></tr>
+        <tr><td>Kompetensprofil</td><td>Du som arbetsgivare kan beställa kompetensprofil/kompetenskartläggning och
+tillhörande coachande samtal till din medarbetare.</td><td>2022-12-15T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation Office 365</td><td>Rådgivning kring vilka möjligheter som finns inom Office 365 för att skapa
+verksamhetsspecifika lösningar. Du kanske är en
+IT-strateg/chef/verksamhetsutvecklare som utreder vilket stöd som finns inom
+området för automation och digitalisering.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation Smart stad</td><td>Konsultation Smart stad innebär all typ av konsultation inom Smart stad, till
+exempel rådgivning, förstudie eller utbildning. Förstudie är en förutsättning
+för att kunna beställa IoT-plattform eller City Information Platform (CIP).</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation automatisering</td><td>Tjänsteerbjudandet stödjer verksamheterna med att skapa förutsättningar för att
+kunna leda den förändring som verksamheten kommer att genomgå vid införandet av
+automatiserade processer.</td><td>2022-11-29T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation inom IT-Säkerhet</td><td>Konsultation inom IT-Säkerhet är för dig som behöver rådgivning och stöd i
+frågor om IT-säkerhet.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation licenshantering</td><td>Konsultation licenshantering ger verksamheterna tillgång till rådgivning och
+stöd via licens-center vid inköp, avtalstecknande och andra frågor som rör
+licensregler och molntjänster, licensavtal och liknande</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation och produktion</td><td>Enheten Visuell kommunikation ger strategiskt och operativt kommunikationsstöd
+till alla förvaltningar och bolag. Vi ger stöd i hela kommunikationsprocessen,
+från analys till produktion och utvärdering.</td><td>2022-11-25T12:58:37.592Z</td></tr>
+        <tr><td>Konsultation applikationshantering</td><td>Rådgivning och stöd i frågor kopplade till beställning av
+applikationspaketering. </td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Krav och Bidrag</td><td>Tjänsten är en tilläggstjänst som nyttjas av Socialförvaltningen och regleras
+via avtal. Alla fyra Socialförvaltningar i Staden, samt Funktionsstöd nyttjar
+tjänsten.
+</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Kundunik utveckling ServiceNow</td><td>Med Kundunik utveckling ServiceNow kan du och din verksamhet komma i gång med
+skräddarsydda digitala arbetsflöden.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Kvalitetssäkrad data</td><td>Tjänsten ger åtkomst till kvalitetssäkrad information runt person, organisation,
+plats och tjänst genom att göra den tillgänglig för tjänster och IT-system.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>LAN till LAN via VPN</td><td>LAN till LAN via VPN är en robust, säker och snabb uppkoppling som ger externa
+bolag möjlighet att ansluta sig till stadsnät - WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Licens som tjänst</td><td>Licens som tjänst erbjuder att säkerställa löpande kontroll och
+livscykelhantering av stadens tillgångar och åtaganden när det gäller licenser
+för programvaror och molntjänster. I dagligt tal kallar vi detta Software Asset
+Management (SAM).</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Lokalt nätverk</td><td>Ett lokalt nätverk är en del i en effektiv IT-miljö och är oftast begränsat till
+en byggnad eller ett kontor. Det lokala nätet kräver anslutning till
+Stadsnät-WAN.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Mallar</td><td>Mallar gör det enkelt producera dokument och varierad visuell kommunikation för
+olika behov. I erbjudandet ingår förvaltning, utveckling och kvalitetssäkring av
+mallarna samt rådgivning, support och utbildning.  </td><td>2023-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Mallgeneratorn</td><td>I mallgeneratorn finns de senaste versionerna av Göteborgs Stads kontorsmallar
+och enklare designmallar för information och kommunikation i Word och
+PowerPoint.</td><td>2023-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Mediabank</td><td>Mediabanken är ett gemensamt bildarkiv åt Göteborgs Stads förvaltningar och
+bolag. </td><td>2023-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Mina Meddelanden</td><td>Mina meddelanden gör det möjligt att skicka meddelanden till medborgare, företag
+och organisationer till den brevlåda mottagaren har valt. Tjänsten skickar till
+Min myndighetspost, Kivra, Billo eller papperspost.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Mina Program (Citrix)</td><td>Mina Program (Citrix) ger dig säker tillgång till applikationer oavsett om du
+använder Staden-dator, surfplatta, privat dator eller annan enhet. Dessutom
+funkar det lika bra oavsett om du är på kontoret eller någon annanstans.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Molnmiljö Azure</td><td>Molnplattform är en kostnadseffektiv lösning som är skalbar vilket ger dig
+precis den kapacitet du behöver. Den har hög tillgänglighet och dessutom är
+leveranstiden kort så du kan komma i gång väldigt snabbt. </td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Momsexpertis</td><td>Momsexpertisen ger utbildning och information i momsfrågor, stöd i frågor som
+har med moms att göra samt hjälper till med mindre utredningar och agerar
+sakkunnig för staden i momsfrågor.</td><td>2022-12-19T07:15:47.381Z</td></tr>
+        <tr><td>MongoDB databas</td><td>Professionell drift och förvaltning av MongoDB-databaser. Vi säkerställer hög
+prestanda, skalbarhet och tillgänglighet för era MongoDB-databaser, så att ni
+kan fokusera på er verksamhet.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>LIS möteshantering i nämnder och styrelser för förtroendevalda</td><td>Tjänsteerbjudandet möjliggör enkel och säker distribution av handlingar till
+förtroendevalda inför nämnd- och styrelsemöten. I tjänsten ingår även funktion
+för elektronisk underskrift av handlingar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Office 365 PC/Mac bolag</td><td>Office 365 PC/Mac bolag är ett effektivt verktyg för dig som arbetar i något av
+stadens bolag och har Staden-dator. Du får många funktioner, lagringsmöjligheter
+och säkerhetsinställningar, och kan samarbeta när och var du vill.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Office 365 PC/Mac  förvaltning</td><td>Office 365 PC/Mac  förvaltning är ett verktyg för dig som arbetar i någon av
+stadens förvaltningar och har Staden-dator. Du får många funktioner,
+lagringsmöjligheter och säkerhetsinställningar, och kan samarbeta när och var du
+vill.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Office 365 skola</td><td>Office 365 skola är ett effektivt verktyg för dig som arbetar inom
+skolförvaltningarna. Du får många funktioner, lagringsmöjligheter och
+säkerhetsinställningar, och kan samarbeta när och var du vill.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Office 365 webb bolag</td><td>Office 365 webb bolag är ett effektivt verktyg för dig som arbetar i något av
+stadens bolag, men inte jobbar så mycket vid datorn. Du får många funktioner,
+lagringsmöjligheter och säkerhetsinställningar, och kan samarbeta när och var du
+vill.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Office 365 webb förvaltning</td><td>Office webb förvaltning är ett verktyg för dig som arbetar i någon av stadens
+förvaltningar, men inte jobbar så mycket vid datorn. Du får många funktioner,
+lagringsmöjligheter och säkerhetsinställningar, och kan samarbeta när och var du
+vill.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd för dokumentation av personuppgiftsbehandlingar och informationssäkerhet</td><td>Tjänsteerbjudandet består av ett systemstöd som Göteborgs stads förvaltningar
+och bolag kan använda för att föra register över sina personuppgiftsbehandlingar
+i enlighet kraven med EU:s Dataskyddsförordning (GDPR).</td><td>2022-11-24T00:00:00.000Z</td></tr>
+        <tr><td>Personsök</td><td>Enkel åtkomst till Folkbokföringsregistret.
+
+Personsök är en tjänst för att snabbt och smidigt få tillgång till uppgifter
+från folkbokföringsregistret.</td><td>2024-01-03T00:00:00.000Z</td></tr>
+        <tr><td>Plattform för CIP och IoT</td><td>Smarta städer – Plattform för CIP (City Information Platform) och IoT är till
+för de som vill använda IoT-utrustning i sin verksamhet och behöver hantera
+olika datakällor enligt smart stad konceptet. IoT-plattform ger dig tillgång
+till en robust och säker plattform för uppkopplade sensorer.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>PostgreSQL databas</td><td>Professionell drift och förvaltning av PostgreSQL-databaser.
+
+Vi säkerställer hög prestanda, skalbarhet och tillgänglighet för era
+PostgreSQL-databaser, så att ni kan fokusera på er verksamhet.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Projektdatabas</td><td>Projektdatabasen är ett stöd för organisationens dagliga verksamhet för att
+lagra och samarbeta kring information i plattformen HCL Notes och på webben.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Projektmetodik och projektverktyg</td><td>En helhetslösning för stadens förvaltningar och bolag i att leda och styra rätt
+projekt på rätt sätt. Tjänsten tillhandahåller ett enhetligt och skalbart stöd
+för hantering av initiativ, uppdrag, projekt, program, portföljer och
+projektkontor.</td><td>2023-01-27T00:00:00.000Z</td></tr>
+        <tr><td>Projektmodeller</td><td>Det är viktigt att stadens förvaltningar och bolag leder och styr sina
+projektverksamheter på rätt sätt. Tjänsten tillhandahåller projektmodeller för
+initiativ, uppdrag, projekt, program, portföljer och projektkontor.
+</td><td>2024-05-17T00:00:00.000Z</td></tr>
+        <tr><td>Projektmognadsanalys</td><td>Att genomföra en mognadsanalys av er projektverksamhet innebär startskottet för
+ett effektivt förbättringsarbete och utgör grunden till en tydlig handlingsplan
+kring nästa steg.</td><td>2023-01-27T00:00:00.000Z</td></tr>
+        <tr><td>Robotisering - enkel</td><td>Tjänsteerbjudandet innebär framtagande av ett stöd i en automatiserad process
+med utgångspunkt i en redan framtagen befintlig process. </td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Robotisering – kundunik</td><td>Robotisering – kundunik avser skräddarsydda lösningar för dina automatiserade
+verksamhetsprocesser. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Robotisering – standard</td><td>Robotisering – standard är den vanligaste lösningen och avser EN standardiserad
+verksamhetsprocess.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Robotisering – utökad</td><td>Robotisering – utökad avser mer komplex lösning där två eller flera
+verksamhetsprocesser ingår. Lösningen är tillräckligt standardiserad för att
+inte räknas som kundunik.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Konsultation digital infrastruktur</td><td>Med Rådgivning digital infrastruktur får du hjälp med att komma i gång med
+digitaliseringen av din verksamhet. Vi hjälper dig att hitta de digitala
+lösningar som ger störst nytta.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Säker digital kommunikation</td><td>Säker digital kommunikation (SDK) är en digital infrastruktur som innebär att
+offentliga aktörer kan utbyta känslig och sekretessklassad information på ett
+tryggt, säkert och effektivt sätt.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Sammanställda räkenskaper</td><td>Göteborgs Stad använder systemet IBM Cognos Controller för rapportering och
+sammanställning av finansiell information för Göteborgs Stadshuskoncernen
+(stadens bolag), kommunalförbund samt för de sammanställda räkenskaperna (hela
+koncernen).</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Sammanträdesrum</td><td>Sammanträdesrummet ger stöd åt nämnd- och styrelsesekreterare att förbereda och
+genomföra möten i nämnder och styrelser.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Serverplattform - fysisk server</td><td>Tjänsten levererar en dedikerad server för installation och drift av
+applikationer, databaser och tjänster för särskilda behov.
+
+ </td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Serverplattform - virtuell server</td><td>Tjänsten levererar en virtuell server för installation och drift av
+applikationer, databaser och tjänster.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Socialt inkasso</td><td>Socialt inkasso innefattar ärenden som är anknutna till socialtjänstlagen (SoL).</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Specialiststöd vid processutveckling</td><td>Intraservice erbjuder specialiststöd vid kartläggning och utveckling av
+processer. Riktade utbildningsinsatser inom området erbjuds också i
+tjänsteerbjudandet.
+</td><td>2022-11-21T08:39:20.225Z</td></tr>
+        <tr><td>Staden-dator Chromebook pedagogisk</td><td>Staden-dator Chromebook pedagogisk ger elever rätt förutsättningar för ett
+tryggt och flexibelt lärande.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Mac administrativ</td><td>Tjänsten är för dig som arbetar inom bolag eller förvaltning (ej skola) med
+behov av en Mac för dagligt arbete för att dra nytta av dess unika
+förutsättningar och appar när det kommer till mediaproduktion, utveckling.
+Tjänsten ge dig rätt förutsättningar för ett säkert och flexibelt arbete.</td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Mac pedagogisk elev</td><td>Staden-dator Mac pedagogisk elev ger elever rätt förutsättningar för ett tryggt
+och flexibelt lärande. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Mac pedagogisk skolpersonal</td><td>Staden-dator Mac pedagogisk skolpersonal ger dig som arbetar inom
+skolförvaltningarna rätt förutsättningar för ett säkert och flexibelt
+arbetssätt </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Windows administrativ</td><td>Staden-dator Windows administrativ ger dig som arbetar inom bolag eller
+förvaltning (ej skola) rätt förutsättningar för ett säkert och flexibelt
+arbetssätt.  </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Windows pedagogisk elev</td><td>Staden-dator Windows pedagogisk elev ger elever rätt förutsättningar för ett
+tryggt och flexibelt lärande. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-dator Windows pedagogisk skolpersonal</td><td>Staden-dator Windows pedagogisk skolpersonal ger dig som arbetar inom
+skolförvaltningarna rätt förutsättningar för ett säkert och flexibelt
+arbetssätt </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto LOV (privata vårdtjänster)</td><td>Staden-konto LOV (privata vårdtjänster) är för de privata vårdgivare som behöver
+åtkomst till system inom vård och omsorg.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto anställd</td><td>Som anställd i Göteborgs stad får du automatiskt ett Staden-konto anställd vid
+månadsanställning.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto elev</td><td>Alla elever inom Göteborgs Stad får automatiskt ett staden-konto elev vid
+skolstart.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto extern</td><td>Staden-konto extern är för konsulter som har uppdrag inom Göteborgs Stad.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto opersonligt</td><td>Staden-konto opersonligt passar bäst där personliga konton inte kan eller bör
+användas. Ett opersonligt konto är ett konto som flera personer kan använda sig
+av.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-konto politiker</td><td>Du får automatiskt ett Staden-konto politiker när du registrerats på ett uppdrag
+i Troman.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-mediaenhet Apple-TV</td><td>Med Staden-medieenhet Apple-TV får du möjlighet att strömma ljud och bild samt
+att trådlöst ansluta Appleprodukter såsom dator, telefon och surfplatta till en
+större skärm.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-mobil Android</td><td>Staden-mobil Android är ditt mobila arbetsredskap som gör din arbetsdag enklare
+och säkrare. Du får tillgång till de appar och den information som du behöver
+för att kunna arbeta mobilt och i enlighet med stadens säkerhetspolicy.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-mobil Android välfärd larmtelefon</td><td>Staden-mobil Android välfärd larmtelefon är bara för dig som jobbar inom välfärd
+och ska ta emot larm från brukare på stadens boenden.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-mobil iOS</td><td>Staden-mobil iOS är ditt mobila arbetsredskap som gör din arbetsdag enklare och
+säkrare. Du får tillgång till de appar och den information som du behöver för
+att kunna arbeta mobilt och i enlighet med stadens säkerhetspolicy.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-mobil iOS välfärd</td><td>Staden-mobil iOS välfärd är bara för dig som jobbar inom välfärd och behöver
+tillgång till applikationerna Plugo, Treserva och PMO som har krav på stark
+autentisering.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-publik enhet Chrome</td><td>Staden-publik enhet Chrome gör det möjligt att ge medborgarna tillgång till
+stadens digitala tjänster. Staden-publik enhet Chrome erbjuds i tre
+grundkonfigurationer.
+
+ * Kioskdator
+ * Informationsskärm
+ * Gästläge</td><td>2024-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Staden-publik enhet Windows</td><td>Staden-publik enhet Windows gör det möjligt att ge medborgarna tillgång till
+stadens digitala tjänster. Enheten står i stadens lokaler kan exempelvis
+användas till att registrera besökare eller söka i bibliotekets katalog.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-surfplatta iOS administrativ</td><td>Staden-surfplatta iOS administrativ är för dig som arbetar på en förvaltning
+eller ett bolag. Du får förutsättningar att fullgöra dina uppgifter på ett
+säkert sätt. Du kan surfa och får tillgång till stadens nätverk och förvalda
+appar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-surfplatta iOS pedagogisk</td><td>Staden-surfplatta iOS pedagogisk är för dig som arbetar inom
+skolförvaltningarna. Du får förutsättningar att fullgöra dina uppgifter på ett
+säkert sätt. Du kan surfa och får tillgång till stadens nätverk och förvalda
+appar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Staden-surfplatta iOS politiker</td><td>Staden-surfplatta iOS politiker är för dig som har förtroendeuppdrag. Du får
+förutsättningar att fullgöra ditt uppdrag på ett säkert sätt. Du kan surfa och
+får tillgång till stadens nätverk och förvalda appar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stadengemensamma HR uppdrag - chefsprogram</td><td>Som medarbetare och chef i Göteborgs Stad kan du beställa Utvecklingsuppdrag för
+chefer och ledningsgrupper.</td><td>2023-06-30T00:00:00.000Z</td></tr>
+        <tr><td>Standard e-post Google</td><td>Standard e-post google gör det möjligt för elever som har google e-post att
+skicka e-post till lärare med MS Outlook e-post på ett säkert och fungerade
+sätt.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Standard e-post Outlook</td><td>Standard e-post Outlook är framtagen för att höja den generella säkerheten för
+stadens användare, och säkerställer att vi har tillräckligt skydd gällande
+e-post. All inkommande e-post kontrolleras genom filterfunktioner från skadlig
+kod som spam och överbelastningsattacker med mera.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Strategisk bildförsörjning</td><td>I strategisk bildförsörjning ingår att planera och producera gemensamma foton,
+filmklipp, illustrationer och animerade illustrationer till Göteborgs Stads
+verksamheter som publiceras i Göteborgs Stads mediabank. </td><td>2023-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Stöd för arkivförteckning</td><td>Tjänsteerbjudandet möjliggör för myndigheter och bolag att föra den
+obligatoriska arkivförteckningen på ett samlat och lättillgängligt sätt.</td><td>2022-11-29T07:41:31.193Z</td></tr>
+        <tr><td>Stöd för bevarandeplanering samt arkivering av digital information</td><td>Tjänsteerbjudandet ger din verksamhet tillgång till stöd i processen för att
+arkivera information från ett verksamhetssystem till System för bevarande -
+Mellanarkiv.</td><td>2025-06-04T00:00:00.000Z</td></tr>
+        <tr><td>Stöd för dokument- och ärendehantering</td><td>Tjänsten är stadens digitala verktyg och nav för information som ska registreras
+eller på annat sätt hållas ordnad.
+
+Tjänsten omfattar stöd för den politiska ärendeprocessen, verkställighet och
+övrig registrering och dokumenthantering.</td><td>2023-09-19T00:00:00.000Z</td></tr>
+        <tr><td>Stöd för förvaltning av digitala arkiv</td><td>Tjänsteerbjudandet ger tillgång till IT-stöd för digital mellanarkivering,
+inklusive drift, förvaltning och utbildning.</td><td>2022-11-29T00:00:00.000Z</td></tr>
+        <tr><td>Stöd för kemikalieregistrering</td><td>Nedan tjänsteerbjudande gäller nuvarande systemstöd Chemsoft. Under våren 2025
+genomfördes en upphandling vilket resulterade i ett systembyte till Chemgroup
+Pro under hösten 2025. Uppdaterat tjänsteerbjudande kommer att formas och
+publiceras inför 2026.</td><td>2022-11-23T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med personaluppföljning</td><td>Tjänsten erbjuder stöd vid uppföljning av nyckeltal inom personalområdet genom
+att tillhandahålla it-stöd, drift och systemförvaltning, utbildning och support.
+Tjänsten riktar sig till roller och funktioner som arbetar med denna typ av
+administration.</td><td>2025-01-02T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med LAS-hantering</td><td>Tjänsten erbjuder stöd i hantering av anställningstid och företräde genom att
+tillhandahålla it-stöd, drift- och systemförvaltning, utbildning och support.
+Tjänsten riktar sig till roller och funktioner som arbetar med denna typ av
+administration.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med arbetsmiljö och hälsa</td><td>Tjänsten erbjuder stöd i rapportering och hantering av händelser i arbetsmiljön
+genom att tillhandahålla it-stöd, drift- och systemförvaltning, utbildning och
+support. Tjänsten riktar sig till medarbetare, chefer, skydds- och
+huvudskyddsombud samt HR.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med bemanning</td><td>Tjänsten erbjuder stöd i behovs- och resursplanering av personal genom att
+tillhandahålla it-stöd, drift och systemförvaltning, utbildning och support.
+Tjänsten riktar sig till roller och funktioner som arbetar med denna typ av
+administration.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med förmåner</td><td>Tjänsten skapar förutsättningar för staden att synliggöra personalförmåner samt
+effektivisera admin. av dessa genom it-stöd, drift och systemförvaltning,
+support och handläggning. Tjänsten riktar sig till medarbetare och
+HR-funktioner.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med löneadministration för förvaltningar och bolag</td><td>Tjänsteerbjudandet ger stöd i löneadministration genom att tillhandahålla
+IT-stöd, drift- och systemförvaltning, utbildning, support och handläggning.
+Erbjudandet riktar sig till roller och funktioner som arbetar med denna typ av
+administration.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med löneadministration för lönecenter</td><td>Tjänsteerbjudandet ger stöd i löneadministration genom att tillhandahålla
+it-stöd samt drift- och systemförvaltning.
+
+Tjänsteerbjudandet riktar sig till roller och funktioner som arbetar med
+löneadministration vid ett centralt lönecenter.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med lönebildning</td><td>Tjänsten erbjuder stöd i arbetet med lönebildningen, genom att tillhandahålla
+IT-stöd, drift och förvaltning, support samt utbildning för analys av
+arbetsvärdering, lönekartläggning samt löneöversyn. Tjänsten riktar sig till
+roller inom HR-funktioner.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med löpande medarbetarundersökningar</td><td>Tjänsten erbjuder stöd i arbetet med löpande medarbetarundersökningar, genom att
+tillhandahålla IT-stöd, utbildning, support, drift och systemförvaltning.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med pensionsadministration</td><td>Tjänsten erbjuder administration och handläggning av kollektivavtalad
+tjänstepension, efterlevandepension och tjänstegrupplivförsäkring (TGL) samt
+information och service. Tjänsten riktar sig till medarbetare, chefer och
+administratörer/HR.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med rehabilitering</td><td>Som stöd i rehabiliteringsarbetet tillhandahåller "Tjänsten Stöd i arbetet med
+rehabilitering" it-stöd, support, drift & systemförvaltning samt utbildning.
+Tjänsten är avsedd för chefer och HR-funktioner och syftar till att underlätta
+och effektivisera rehabiliteringsprocessen.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med rekrytering</td><td>Tjänsten erbjuder stöd i rekryteringsprocessen genom att tillhandahålla it-stöd,
+drift- och systemförvaltning, utbildning och support. Tjänsten riktar sig till
+chefer och HR-funktioner som arbetar med denna typ av administration.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med riskhantering och kontroll</td><td>Tjänsteerbjudandet skapar möjlighet för verksamheter inom staden att
+systematiskt arbeta med riskhantering enligt stadens riktlinjer för intern
+kontroll.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med utbildningsportalen</td><td>Tjänsten erbjuder stöd vid planering, genomförande och uppföljning av
+utbildningsinsatser genom att tillhandahålla it-stöd, drift- och
+systemförvaltning, utbildning och support. Riktar sig till roller och funktioner
+som berörs av utbildningar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i arbetet med årliga medarbetarundersökningar</td><td>Tjänsten erbjuder stöd i arbetet med årliga medarbetarundersökningar, genom att
+tillhandahålla IT-stöd, utbildning, support, drift och systemförvaltning.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i budget, prognos och analysprocesserna</td><td>Stöd i budget, prognos och analys är en kommungemensam bastjänst som ger dig
+möjlighet att, på ett enkelt och överblickbart sätt, arbeta med din
+organisations budget och prognos och analys av den finansiella ställningen. </td><td>2025-03-12T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i ekonomiprocesserna</td><td>Tjänsten ger staden ett gemensamt och standardiserat IT-stöd och gemensamma
+processer som ska underlätta arbetet och ge stöd i god kvalitet i stadens
+ekonomiska redovisning. Tjänsten är obligatorisk för alla verksamheter i
+Göteborgs Stad.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd i planering och uppföljning</td><td>Tjänsteerbjudandet tillhandahåller ett systemstöd med kompletterande teknisk
+support för att verksamheter inom staden ska kunna arbeta systematiskt med
+planering och uppföljning. Dessutom erbjuds löpande utbildningar.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Stöd vid inköp och beställning</td><td>Tjänsten ger stöd till dig som ska beställa varor och tjänster. Du får tillgång
+till staden gemensamma ramavtal och lokala avtal samt möjlighet att beställa
+utifrån dessa.</td><td>2022-12-05T00:00:00.000Z</td></tr>
+        <tr><td>Stöd vid leverantörsfakturahantering</td><td>Tjänsten riktar sig till stadens verksamheter med syfte att ska kunna ta emot,
+betala och arkivera leverantörsfakturor på ett säkert och smidigt sätt.</td><td>2022-12-27T00:00:00.000Z</td></tr>
+        <tr><td>Stöd vid grundläggande processarbete</td><td>Tjänsteerbjudandet omfattar grundläggande stöd i processorientering och
+processutveckling. Tjänsteerbjudandet riktar sig till verksamheter som arbetar
+eller vill arbeta med processer. </td><td>2022-10-13T11:02:58.072Z</td></tr>
+        <tr><td>Stöd vid uppföljning av inköp</td><td>Tjänsteerbjudandet ger stadens verksamheter möjlighet att följa upp och
+analysera sina inköp.  </td><td>2022-12-02T00:00:00.000Z</td></tr>
+        <tr><td>Svarsgrupper</td><td>En Svarsgrupp är ett gemensamt nummer in till din verksamhet. Svarsgruppen
+underlättar hanteringen av inkommande samtal för dig och dina kollegor och
+möjliggör uppföljning av arbetet. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Synpunktshanterare</td><td>Synpunktshanteraren ger myndigheten möjlighet att hantera inkomna synpunkter,
+klagomål, förfrågningar med mera från medborgare på ett enhetligt sätt.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>System E-post</td><td>System E-post gör det möjligt för IT-system att skicka påminnelser och
+notifieringar till både medarbetare och medborgare.</td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Systemintegration - standard</td><td>Tjänsteerbjudandet ger att automatiskt informationsutbyte mellan olika
+IT-system. Det innebär att hämta, transformera och/eller förflytta data på ett
+förutbestämt sätt.
+
+Systemintegration - standard avser enklare integrationer.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Systemintegration - utökad</td><td>Tjänsteerbjudandet ger att automatiskt informationsutbyte mellan olika
+IT-system. Det innebär att hämta, transformera och/eller förflytta data på ett
+förutbestämt sätt.
+
+Systemintegration - utökad avser mer komplexa integrationer.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Säker filöverföring – SFTP</td><td>Behöver du dela filer säkert med andra förvaltningar eller externa parter?
+
+Då kan vi nu erbjuda tjänsteerbjudandet Säker filöverföring. Vi använder oss av
+protokollen SFTP och HTTPS, vilket gör att all informationsöverföring sker
+krypterat.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Säkerhetskopiering Container</td><td>Säkerhetskopiering av namespace.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Säkerhetskopiering Databas</td><td>Säkerhetskopiering av databaser i Intraservice datacenter.</td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Säkerhetskopiering Server</td><td>Säkerhetskopiering av servrar i Intraservice datacenter.
+
+ </td><td>2024-03-01T00:00:00.000Z</td></tr>
+        <tr><td>Sök och förstör e-post</td><td>Med tjänsten Sök och förstör e-post kan du återkalla e-post till stadens
+användare. Till exempel om utskicket har missvisande, felaktiga eller känslig
+information. Skicka en beställning, så söker Intraservice fram meddelandet och
+förstör det.
+</td><td>2024-10-31T00:00:00.000Z</td></tr>
+        <tr><td>Tekniskt stöd applikationsdrift (dag)</td><td>Tekniskt stöd applikationsdrift (dag) ger dig exempelvis trygg drift av din
+applikation eller extra hjälp under kontorstid. Vi behöver din beställning minst
+2 veckor i förväg.</td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Tekniskt stöd applikationsdrift (kväll och helg)</td><td>Tekniskt stöd applikationsdrift (kväll och helg) ger dig extra trygghet i
+samband med till exempel större uppdateringar utanför ordinarie arbetstid. Vi
+behöver din beställning minst 3 veckor i förväg. </td><td>2024-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Tillfällig anslutning</td><td>Tillfällig anslutning är en temporär uppkoppling till stadsnät – WAN som du kan
+beställa när något extraordinärt (exempelvis brand eller vattenskada) tvingar
+din verksamhet att flytta in i tillfälliga lokaler.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Trådlöst nätverk</td><td>Trådlöst nätverk passar bäst för arbetsplatser som mest använder bärbara datorer
+och surfplattor. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Undantagshantering e-post</td><td>Undantagshantering e-post används framför allt inför stora e-postutskick för att
+förhindra att e-post fastnar i mottagarnas spam-filter.
+
+Tjänsten används även om användare har fått e-post som har fastnat i vårt
+spam-filter. Ett ärende skickas till Intraservice, som genomför åtgärder.</td><td>2024-10-31T00:00:00.000Z</td></tr>
+        <tr><td>Utbildning Att leda utan att vara chef</td><td>Du som chef kan beställa utbildningen Att leda utan att vara chef för din
+medarbetare.
+
+
+</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Utbildning Coachande förhållningssätt</td><td>Vi erbjuder utbildning i Det coachande förhållningssättet, för målgruppen chef
+alternativt medarbetare. </td><td>2022-12-13T00:00:00.000Z</td></tr>
+        <tr><td>Utbildning coachande förhållningssätt (förvaltnings- eller bolagsspecifik)</td><td>Du som arbetsgivare kan beställa utbildning i det coachande förhållningssättet
+anpassat efter förvaltningens eller bolagets behov. </td><td>2022-12-13T00:00:00.000Z</td></tr>
+        <tr><td>Utreda, utveckla och införa lösning för Smart stad</td><td>Utreda, utveckla och införa lösning för Smart stad, ger dig möjlighet att
+utreda, utveckla och införa lösning för Smart stad är till för de som använder
+eller vill använda IoT-utrustning (uppkopplade sensorer) i sin verksamhet.</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Utveckla och införa automatisering</td><td>Tjänsteerbjudandet innebär stöd i utveckling och design av en automatiserad
+process med utgångspunkt i en redan framtagen lösningsbeskrivning.</td><td>2022-11-29T00:00:00.000Z</td></tr>
+        <tr><td>Utveckling e-tjänster</td><td>Utveckling e-tjänster hjälper din verksamhet att utveckla e-tjänster för stadens
+medborgare på goteborg.se. </td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Utvecklingsuppdrag för chefer och ledningsgrupper</td><td>Som arbetsgivare i Göteborgs Stad kan du beställa utvecklingsuppdrag för dig och
+din arbetsgrupp. Det kan vara ledningsgruppsutveckling, stöd i andra
+grupputvecklingsinsatser, workshops eller annat som gruppen behöver.</td><td>2022-12-15T00:00:00.000Z</td></tr>
+        <tr><td>VPN-klient</td><td>VPN-klient kompletterar standardlösningarna för fjärråtkomst och ger dig större
+möjligheter att jobba var du än är.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Verksamhetsanpassad kundtjänst</td><td>Verksamhetsanpassad kundtjänst erbjuder kundtjänst utifrån kundens målgrupp. I
+tjänsten ingår att svara på frågor och förberedande handläggning via telefon,
+mejl, chatt, e-tjänster och appar hos verksamheten.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Verksamhetshandbok</td><td>Med verksamhetshandboken kan myndigheten producera och publicera myndighetens
+styrande och stödjande dokument så att det tydligt framgår vad som gäller på
+myndigheten vid en given tidpunkt.
+
+Tjänsteerbjudandet är under avveckling.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Virtuell Klient</td><td>Tjänsten kommer möjliggöra tillgång till virtuella klientdatorer som kan nås
+från vilken enhet som helst, varifrån som helst via en webbläsare. Effektivare
+utnyttjande av dyr maskinvara där delar som CPU, GPU och minne är centraliserade
+och delas mellan användare beroende på behov.
+
+</td><td>2025-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Webbapplikationsplattform</td><td>Tjänsteerbjudandets grundfunktion är att tillhandahålla en plattform för
+webbaserad information som är baserad på gemensam identitetshantering,
+förutbestämda roller och olika typer av digitala gränssnitt.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Webbhotell</td><td>Webbhotell är den tekniska förutsättningen som gör det möjligt för din
+verksamhet att ha en egen webbplats eller webbaserat system.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+        <tr><td>Öppna data</td><td>Öppna data erbjuder stöd till förvaltningar för att tillgängliggöra stadens
+offentliga information för att kunna användas av myndigheter, företag och
+allmänhet med syfte att skapa nya tjänster.</td><td>2023-01-01T00:00:00.000Z</td></tr>
+      </tbody>
+    </table>
+  
+  </body>
+</html >

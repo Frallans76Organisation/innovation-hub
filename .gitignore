@@ -1,0 +1,105 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+innovation_hub.db
+
+# ChromaDB
+chroma_db/
+
+# Local Docker volumes
+local-data/
+local-chroma/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Secrets - NEVER COMMIT!
+k8s/secret.yaml
+*secret*.yaml
+
+# OpenShift
+.openshift/
+
+# CI/CD (if you have local overrides)
+.gitlab-ci.local.yml
+
+# Backups
+backup/
+*.backup
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Node (if frontend uses npm)
+node_modules/
+npm-debug.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Terraform (if using IaC)
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Local overrides
+docker-compose.override.yml

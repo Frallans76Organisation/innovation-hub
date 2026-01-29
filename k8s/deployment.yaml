@@ -1,0 +1,113 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: innovation-hub
+  namespace: innovation-hub
+  labels:
+    app: innovation-hub
+    version: v1
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: innovation-hub
+  template:
+    metadata:
+      labels:
+        app: innovation-hub
+        version: v1
+    spec:
+      # OpenShift security context
+      securityContext:
+        runAsNonRoot: true
+        fsGroup: 0
+
+      containers:
+      - name: innovation-hub
+        image: registry.gitlab.com/your-group/innovation-hub:latest
+        imagePullPolicy: Always
+
+        ports:
+        - name: http
+          containerPort: 8000
+          protocol: TCP
+
+        # Environment variables from ConfigMap
+        envFrom:
+        - configMapRef:
+            name: innovation-hub-config
+        - secretRef:
+            name: innovation-hub-secrets
+
+        # Health checks
+        livenessProbe:
+          httpGet:
+            path: /api/health
+            port: 8000
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+
+        readinessProbe:
+          httpGet:
+            path: /api/health
+            port: 8000
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+
+        startupProbe:
+          httpGet:
+            path: /api/health
+            port: 8000
+            scheme: HTTP
+          initialDelaySeconds: 0
+          periodSeconds: 10
+          timeoutSeconds: 3
+          failureThreshold: 30
+
+        # Resource limits
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+
+        # Volume mounts
+        volumeMounts:
+        - name: data
+          mountPath: /app/data
+        - name: chroma
+          mountPath: /app/chroma_db
+
+        # Security context for container
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          capabilities:
+            drop:
+            - ALL
+
+      # Volumes
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: innovation-hub-data
+      - name: chroma
+        persistentVolumeClaim:
+          claimName: innovation-hub-chroma
+
+      # Image pull secrets (for private registry)
+      imagePullSecrets:
+      - name: gitlab-registry

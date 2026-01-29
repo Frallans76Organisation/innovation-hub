@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: innovation-hub-config
+  namespace: innovation-hub
+  labels:
+    app: innovation-hub
+data:
+  # Application configuration
+  HOST: "0.0.0.0"
+  PORT: "8000"
+  DEBUG: "False"
+
+  # Database configuration (SQLite path inside container)
+  DATABASE_URL: "sqlite:////app/data/innovation_hub.db"
+
+  # AI Model configuration
+  AI_MODEL: "qwen/qwen3-32b"
+  OPENROUTER_BASE_URL: "https://openrouter.ai/api/v1"
+
+  # Redis URL (if using Redis)
+  REDIS_URL: "redis://localhost:6379/0"

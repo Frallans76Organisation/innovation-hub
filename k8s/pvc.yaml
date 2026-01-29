@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: innovation-hub-data
+  namespace: innovation-hub
+  labels:
+    app: innovation-hub
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  # OpenShift will automatically provision storage
+  # If you need a specific storage class, uncomment below:
+  # storageClassName: your-storage-class
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: innovation-hub-chroma
+  namespace: innovation-hub
+  labels:
+    app: innovation-hub
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  # storageClassName: your-storage-class
