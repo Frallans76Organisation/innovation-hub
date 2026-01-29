@@ -1,0 +1,128 @@
+name: "💡 Innovation Idea Submission"
+description: "Submit your innovation idea to the Innovation Hub"
+title: "[Idea] "
+labels: ["idea", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting your innovation idea! Please fill out the form below to help us understand and evaluate your idea.
+  
+  - type: input
+    id: idea-title
+    attributes:
+      label: "Idea Title"
+      description: "Give your idea a short, descriptive title"
+      placeholder: "e.g., AI-powered document classification system"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: "Idea Description"
+      description: "Provide a detailed description of your innovation idea"
+      placeholder: "Describe the problem you're solving, your proposed solution, and expected benefits..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: "Problem Statement"
+      description: "What specific problem or challenge does this idea address?"
+      placeholder: "Describe the current pain points or inefficiencies..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: "Proposed Solution"
+      description: "How does your idea solve the identified problem?"
+      placeholder: "Explain your approach, technology, or methodology..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected-benefits
+    attributes:
+      label: "Expected Benefits"
+      description: "What benefits do you expect this innovation to deliver?"
+      placeholder: "e.g., 30% efficiency improvement, better citizen service, cost reduction..."
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: target-audience
+    attributes:
+      label: "Target Audience"
+      description: "Who are the primary beneficiaries of this innovation?"
+      multiple: true
+      options:
+        - Citizens
+        - City Employees
+        - Businesses
+        - Visitors
+        - Internal Operations
+        - Other (please specify)
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: innovation-type
+    attributes:
+      label: "Innovation Type"
+      description: "What type of innovation is this?"
+      options:
+        - Process Improvement
+        - Digital Service
+        - Technology Solution
+        - Policy Innovation
+        - Service Design
+        - Data-Driven Solution
+        - AI/ML Application
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: existing-services
+    attributes:
+      label: "Related Existing Services"
+      description: "Are there any existing city services or systems this idea relates to or could integrate with?"
+      placeholder: "List any relevant services, systems, or departments..."
+  
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: "Success Metrics"
+      description: "How would you measure the success of this innovation?"
+      placeholder: "e.g., user adoption rate, efficiency gains, cost savings..."
+  
+  - type: textarea
+    id: implementation-considerations
+    attributes:
+      label: "Implementation Considerations"
+      description: "Any specific implementation requirements, constraints, or considerations?"
+      placeholder: "e.g., regulatory requirements, integration needs, timeline..."
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Any other information that would help evaluate this idea?"
+      placeholder: "Attachments, references, or supporting materials can be added after submission..."
+  
+  - type: markdown
+    attributes:
+      value: |
+        ## What happens next?
+        
+        1. Your idea will be automatically analyzed by our AI system
+        2. The AI will map your idea to existing services and identify potential synergies
+        3. Our innovation team will review the AI analysis and your submission
+        4. You'll receive feedback and next steps via GitHub notifications
+        5. Promising ideas will be moved to our Innovation Pipeline for further development
+        
+        Thank you for contributing to Göteborg's innovation ecosystem!
