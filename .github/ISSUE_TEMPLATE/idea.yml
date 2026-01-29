@@ -1,0 +1,90 @@
+name: "Ny Ide"
+description: "Lamna in en ny ide eller forbattringsforslag"
+title: "[IDE] "
+labels: ["ide", "inbox"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Valkomna till Innovation Hub!
+        Tack for att du vill dela din ide. Fyll i formularet nedan sa analyseras din ide automatiskt.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Kort titel"
+      description: "En kort, beskrivande titel for din ide"
+      placeholder: "Ex: Digital signering av avtal"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Beskriv din ide"
+      description: "Vad vill du uppna? Vilket problem loser det? Var sa detaljerad du kan."
+      placeholder: |
+        Beskriv:
+        - Vad ar problemet idag?
+        - Hur skulle din losning fungera?
+        - Vilka fordelar ser du?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Typ av forslag"
+      description: "Vad handlar ditt forslag om?"
+      options:
+        - "Ny ide - nagot helt nytt"
+        - "Forbattring av befintligt system/tjanst"
+        - "Problem att losa"
+        - "Behov/onskema fran verksamheten"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_group
+    attributes:
+      label: "Vem berirs mest?"
+      description: "Vilken malgrupp har storst nytta av forslaget?"
+      options:
+        - "Medborgare"
+        - "Medarbetare"
+        - "Foretag"
+        - "Andra organisationer"
+        - "Flera grupper"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: "Hur bradskande ar behovet?"
+      description: "Nar behovs losningen?"
+      options:
+        - "Akut - behover losning snart"
+        - "Viktigt - inom 6 manader"
+        - "Planerat - inom 1 ar"
+        - "Vision - langre fram"
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: "Forvaltning/enhet"
+      description: "Vilken forvaltning eller enhet arbetar du pa?"
+      placeholder: "Ex: Socialforvaltningen, IT-avdelningen"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Ovrig information"
+      description: "Har du ytterligare information, lankar eller bilagor?"
+      placeholder: "Eventuella lankar, relaterade system, kontaktpersoner..."
+    validations:
+      required: false

@@ -1,0 +1,101 @@
+name: AI Analysera Ide
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  analyze:
+    # Kör endast för idéer i inbox
+    if: contains(github.event.issue.labels.*.name, 'ide') || contains(github.event.issue.labels.*.name, 'inbox')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install httpx python-dotenv
+
+      - name: Run AI Analysis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VLLM_BASE_URL: ${{ secrets.VLLM_BASE_URL }}
+          VLLM_AUTH: ${{ secrets.VLLM_AUTH }}
+          BIFROST_API_KEY: ${{ secrets.BIFROST_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python scripts/analyze_idea.py \
+            --issue-number "${{ github.event.issue.number }}" \
+            --issue-title "${{ github.event.issue.title }}" \
+            --repo "${{ github.repository }}"
+
+      - name: Post AI Analysis as Comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Läs analysresultatet
+            let analysis;
+            try {
+              analysis = fs.readFileSync('analysis_result.md', 'utf8');
+            } catch (e) {
+              analysis = '## AI-analys misslyckades\n\nKunde inte genomföra automatisk analys. En handläggare kommer granska idén manuellt.';
+            }
+            
+            // Lägg till som kommentar
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: analysis
+            });
+
+      - name: Update Labels Based on Analysis
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Läs labels från analysen
+            let labelsToAdd = [];
+            try {
+              const labelsFile = fs.readFileSync('analysis_labels.json', 'utf8');
+              labelsToAdd = JSON.parse(labelsFile);
+            } catch (e) {
+              console.log('No labels file found, skipping label update');
+              return;
+            }
+            
+            if (labelsToAdd.length > 0) {
+              // Lägg till labels
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: labelsToAdd
+              });
+              
+              // Ta bort inbox-label om den finns
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  name: 'inbox'
+                });
+              } catch (e) {
+                // Label kanske inte finns
+              }
+            }
